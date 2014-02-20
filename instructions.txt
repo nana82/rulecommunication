@@ -1,1 +1,5 @@
-How to install this assignment.
+This assignment requires no speacial measures for installation. I have run this assignment both in windows 7 and ubuntu 14.04 LTS. Incase if you see white screen after running the assignment try to run "Composer update" or "/usr/bin/composer self-update".
+
+Remember to change/add the name of DATABASE in app/config/database.php and thats it.
+
+Incase if something does not work let then me know. Although, like I said I have tested in on both linux and windows.
