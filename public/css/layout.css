@@ -1,0 +1,18 @@
+.container {
+	width: 780px;
+	margin: 0 auto;
+}
+
+.event-forms {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+}
+
+.error {
+	color: #ef7c61;
+}
+.bold {
+    font-weight: bold;
+}

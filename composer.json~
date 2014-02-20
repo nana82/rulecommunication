@@ -1,0 +1,45 @@
+{
+	"name": "laravel/laravel",
+	"description": "The Laravel Framework.",
+	"keywords": ["framework", "laravel"],
+	"license": "MIT",
+	"require": {
+		"laravel/framework": "4.0.*",
+        "intouch/laravel-newrelic": "*",
+        "way/generators": "dev-master",
+		"barryvdh/laravel-ide-helper": "1.*",
+        "rtablada/package-installer": "dev-master",
+		"mccool/laravel-auto-presenter": "*",
+		"iron-io/iron_mq": "*"
+	},
+	"autoload": {
+		"classmap": [
+			"app/commands",
+			"app/controllers",
+			"app/models",
+            "app/classes",
+			"app/database/migrations",
+			"app/database/seeds",
+			"app/tests/TestCase.php"
+		]
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan optimize"
+		],
+		"pre-update-cmd": [
+			"php artisan clear-compiled"
+		],
+		"post-update-cmd": [
+            "php artisan ide-helper:generate",
+            "php artisan optimize"
+        ],
+		"post-create-project-cmd": [
+			"php artisan key:generate"
+		]
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "dev"
+}
